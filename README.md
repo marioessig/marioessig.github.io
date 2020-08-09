@@ -34,7 +34,7 @@ Develop own professional portfolio for Week Two's assignment.
 I am able to present my portfolio in a grid as well as adding a flashing effect on each work I have done using CSS. This has been my most challenging work to date for this course. Exciting, though!
 
 ### Webpage Screenshot
-![Website Screenshot](assets/images/github_website_animation.gif)
+![Website Screenshot](assets/images/githubio_website_animation.gif)
 
 ### Links:
 [Deployed Application URL](https://marioessig.github.io/)
