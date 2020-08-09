@@ -31,12 +31,12 @@ Develop own professional portfolio for Week Two's assignment.
 >*THEN* I am presented with a responsive layout that adapts to my viewport <br>
   
 ## Challenge Result
-IN PROGRESS
+I am able to present my portfolio in a grid as well as adding a flashing effect on each work I have done using CSS. This has been my most challenging work to date for this course. Exciting, though!
 
 ### Refactored Webpage Screenshot
-![IN CONSTRUCTION]("")
+![Website Screenshot]("assets/images/github_io_website_screenshot.png")
 
 ### Links:
-[Deployed Application URL - IN CONSTRUCTION]("")
+[Deployed Application URL]("https://marioessig.github.io/")
 
-[GitHub Repository URL - IN CONSTRUCTION]("")
+[GitHub Repository URL]("https://github.com/marioessig/marioessig.github.io")
