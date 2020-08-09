@@ -1,0 +1,264 @@
+header {
+  padding: 20px 35px;
+  background-color: rgb(0, 180, 252);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.5vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  text-shadow: none;
+  border: 1px solid black;
+  font-size: 1.75vw;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+/* Banner Section start */
+.profile-img {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: left;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.banner-img {
+  background-image: url(/assets/images/Banner.jpeg);
+}
+
+.banner-img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.banner h3, .banner h2 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: white 1px 0 20px;
+  position: relative;
+  z-index: 1;
+  top: 200px;
+  font-size: 40px;
+}
+
+.banner:hover h2, .banner:hover h3 {
+  top: 0px;
+  transition: .7s;
+}
+
+.banner:hover h2 {
+    top: 0px;
+    transition-delay: .7s;
+}
+/* Banner Section end */
+
+/* Section Title Styling start */
+.section-title {
+  font-size: 45px;
+  width: 20%;
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  border-right: solid 3px;
+  padding-right: 15px;
+  text-shadow: 0 0 10px rgba(24, 23, 23, 0.3);
+}
+/* Section Title Styling end */
+
+/* About Me section start */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.about-me p {
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* About Me section end */
+
+/* My Work section start */
+.my-work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.links {
+  width: 78%;
+  margin: 20px 0;
+}
+/* My Work end */
+
+/* My Work Grid start */
+.my-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 13px;
+  margin-left: 5px;
+  width: 100%;
+  margin: 0;
+}
+
+.grid-item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 600px;
+  background-image: url(/assets/images/Run_Buddy_Website_Screenshot.png);
+  background-size: cover;
+  grid-column:  span 2;
+  grid-row: span 2;
+  border: 7px solid lightblue;
+  border-radius: 3%;
+}
+
+.grid-item-img-2 {
+  background-image: url(/assets/images/Horiseon_Website_Screenshot.png);
+}
+
+.grid-item-img-3 {
+  background-image: url(/assets/images/Trailhead.png);
+}
+
+.grid-item-2, .grid-item-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  opacity: 1;
+  border: 7px solid lightblue;
+  border-radius: 3%;
+}
+
+.grid-item-flash:hover {
+  opacity: 1;
+  -webkit-animation: flash 1s;
+  animation: flash 1s;
+}
+
+@-webkit-keyframes flash {
+  0% {  opacity: .3;  }
+  100% { opacity: 1; }
+}
+@keyframes flash {
+  0% { opacity: .3; }
+  100% { opacity: 1;  }
+}
+/* My Word Grid end */
+
+/* Contact start */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.contact-info a {
+  text-decoration: none underline;
+  color: rgb(106, 122, 158);
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 30px;
+  padding: 43px 25px;
+  text-align: center;
+  font-weight: bold;
+}
+/* Contact end */
+
+/* Media Query section*/
+@media screen and (max-width: 1024px) {
+    .about-me h2 {
+        font-size: 32px;
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        text-align: center;
+        justify-content: center;
+    }   
+    .about-me {
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    .section-title {
+        flex: 1 100%;
+        border-bottom: solid 1px;
+        text-align: center;
+        justify-content: center;
+    }
+    .links {
+        width: 100%;  
+    }
+    .my-work-grid {
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+    }
+
+}
